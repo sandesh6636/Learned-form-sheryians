@@ -10,6 +10,23 @@ body {
   height: 100%;
   width: 100%;
 }
+#cursor {
+  height: 15px;
+  width: 15px;
+  position: fixed;
+  background-color: #95c113;
+  border-radius: 50%;
+  z-index: 99;
+}
+#cursor-blur {
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  background-color: rgba(188, 226, 83, 0.3);
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: 10;
+}
 #nav {
   height: 145px;
   padding: 0 190px;
@@ -38,7 +55,7 @@ video {
 }
 #main {
   position: relative;
-  background-color: rgba(56, 55, 55, 0.47);
+  background-color: rgba(0, 0, 0, 0.39);
 }
 #page1 {
   height: 100vh;
@@ -49,6 +66,7 @@ video {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  z-index: 10;
 }
 #page1 h1 {
   font-size: 140px;
@@ -78,4 +96,46 @@ video {
 #page2 {
   height: 100vh;
   width: 100%;
+  z-index: 10;
+}
+#sclloer {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+#sclloer::-webkit-scrollbar {
+  display: none;
+}
+#sclloer-1 {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#sclloer h4 {
+  display: inline-block;
+  font-size: 130px;
+  font-weight: 900px;
+  font-family: gilroy;
+  margin-right: 10px;
+  color: #000;
+  transition: all linear 0.2s;
+  -webkit-text-stroke: 2px #95c113;
+}
+#sclloer h4:hover {
+  color: #95c113;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
