@@ -139,3 +139,33 @@ video {
     transform: translateX(-100%);
   }
 }
+#about-us {
+  height: 40vh;
+  width: 100%;
+  /* background-color: red; */
+  padding: 0 50px;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  justify-content: space-around;
+}
+#about-us img {
+  height: 210px;
+  width: 210px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+#about-us-in {
+  width: 50%;
+  text-align: center;
+}
+#about-us-in h3 {
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+#about-us-in p {
+  font-size: 20px;
+  line-height: 25px;
+}
