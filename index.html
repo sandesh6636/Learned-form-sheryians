@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front-end Project from youtube</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,12 +28,7 @@
       <h4>CAFFE</h4>
       <h4>EVENTS</h4>
     </div>
-    <video
-      autoplay
-      loop
-      muted
-      src="https://sidcupfamilygolf.com/wp-content/uploads/2023/08/SFG-Website-Header-Video-0823.mp4"
-    ></video>
+    <video autoplay loop muted src="Assests/mainv.mp4"></video>
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
     <div id="main">
@@ -41,6 +40,7 @@
           in Sidcup, South East London. Passionate about technology, player
           development and making golf fun and accessible to everyone.
         </p>
+        <div id="arrow"><i class="ri-arrow-down-fill"></i></div>
       </div>
       <div id="page2">
         <div id="sclloer">
@@ -80,36 +80,121 @@
             alt=""
           />
         </div>
+        <div id="cards-container">
+          <div class="card" id="card1">
+            <div class="overlay">
+              <h4>TopRacer Range</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                quam molestias magni cupiditate architecto et enim quas facere
+                ipsum tempora?
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <div class="overlay">
+              <h4>Adventure Golf</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                quam molestias magni cupiditate architecto et enim quas facere
+                ipsum tempora?
+              </p>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <div class="overlay">
+              <h4>Golf Lessons</h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                quam molestias magni cupiditate architecto et enim quas facere
+                ipsum tempora?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="green-div">
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
+            alt=""
+          />
+          <h4>
+            SIGN UP FOR SIDCUP NEWS AND SPECIAL OFFERS STRAIGHT TO YOUR INBOX
+          </h4>
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
+            alt=""
+          />
+        </div>
       </div>
-      <div id="cards-cointainer">
-        <div class="cards" id="cards1">
-          <div class="overlay">
-            <h4>TopRacer Ranges</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sint
-              iste quae corrupti quod sed magni quos corporis, delectus ducimus?
-            </p>
-          </div>
+      <div id="page3">
+        <p>
+          Excellent couple of hours, relax and enjoy in the fun. Staff were
+          accommodating, friendly and very helpful. Café on site for
+          refreshments etc. Will keep children enterntained during the holidays.
+          Worth a visit if you haven’t been.
+        </p>
+        <img
+          id="colon1"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+          alt=""
+        />
+        <img
+          id="colon2"
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg"
+          alt=""
+        />
+      </div>
+      <div id="page4">
+        <h1>WHAT ARE YOU WATING FOR??</h1>
+        <div class="elem">
+          <h2>Toptracer Range</h2>
+          <img src="Assests/elem1.avif" alt="" />
         </div>
-        <div class="cards" id="cards2">
-          <div class="overlay">
-            <h4>Advanturous Golf</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              corporis possimus quidem doloremque consectetur nemo. Atque iusto
-              velit officiis sit?
-            </p>
-          </div>
+        <div class="elem">
+          <h2>Golf Lesson</h2>
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+            alt=""
+          />
         </div>
-        <div class="cards" id="cards3">
-          <div class="overlay">
-            <h4>Golf Lessons</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              dolore sapiente dicta explicabo. Magnam possimus eius cupiditate
-              nam nobis sit!
-            </p>
-          </div>
+        <div class="elem">
+          <h2>ADVANTURE Golf</h2>
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="footer">
+        <img
+          src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg"
+          alt=""
+        />
+        <div id="f1">
+          <img
+            src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg"
+            alt=""
+          />
+        </div>
+        <div id="f2">
+          <h3>TOPTRACER Ranges</h3>
+          <h3>Golf Lessons</h3>
+          <h3>Adventure Golf</h3>
+        </div>
+        <div id="f3">
+          <h3>coffee shop</h3>
+          <h3>LEAGUES</h3>
+          <h3>Contact us</h3>
+        </div>
+        <div id="f4">
+          <h4>
+            A20, SIDCUP BYPASS <br />
+            CHISLEHURST <br />
+            KENT <br />
+            BR7 6RP <br />
+            TEL: 0208 309 0181 <br />
+            GET DIRECTIONS <br />
+          </h4>
         </div>
       </div>
     </div>
